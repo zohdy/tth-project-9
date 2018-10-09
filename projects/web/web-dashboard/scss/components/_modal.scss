@@ -1,0 +1,30 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.modal-content {
+  position: fixed;
+  background-color: $color-accent;
+  color: $white;
+  font-size: .85em;
+  font-weight: 600;
+  width: fit-content;
+  p {
+    margin:0;
+    padding: 16px 32px;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 1s ease-out both;
+  animation: fade-out 1s ease-out both;
+}
+
+
+

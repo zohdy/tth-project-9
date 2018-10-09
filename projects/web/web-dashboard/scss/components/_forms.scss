@@ -1,0 +1,29 @@
+.content-header {
+    /*
+    @include mq('small'){
+      margin-right: 0;
+    }
+    */
+
+    input {
+      width: 384px;
+      height: 40px;
+      padding-left: 8px;
+      border: 1px solid $line-color;
+      border-radius: 5px;
+    }
+    button {
+      background: transparent;
+      border: none;
+      left: -20px;
+      position: relative;
+      color: $main-color;
+      padding: 0;
+      margin-right: -4px;
+    }
+    .fa-search {
+      &::before {
+        margin: -20px;
+      }
+    }
+  }

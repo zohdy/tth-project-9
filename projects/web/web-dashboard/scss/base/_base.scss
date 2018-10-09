@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+}
+
+main {
+  background: white;
+}
+
+input, textarea {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

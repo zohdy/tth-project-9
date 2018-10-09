@@ -1,0 +1,108 @@
+.members-wrapper {
+  border-top: 1px solid $line-color;
+  border-bottom: 1px solid $line-color;
+  @include mq('l'){
+    display: flex;
+  }
+  img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+    @include mq('l'){
+      display: inline-block;
+    }
+  }
+  ul {
+    padding-left: 0;
+  }
+  li {
+    margin: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $line-color;
+    position: relative;
+    &:last-of-type {
+      border:none;
+    }
+  }
+  .members-header {
+    text-align: center;
+    @include mq('m'){
+      text-align: left;
+      margin-left: 24px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+  .name {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: 1;
+  }
+  .email {
+    margin-top:0;
+    margin-bottom: 0;
+    flex: 1;
+  }
+  .date {
+    margin-top:0;
+    margin-bottom: 0;
+    @include mq('l'){
+      float: right;
+    }
+  }
+
+.new-members {
+  @include mq('l'){
+    flex: 1;
+    border-right: 1px solid $line-color;
+  }
+}
+
+.activity {
+  border-top: 1px solid $line-color;
+  @include mq('l'){
+    flex: 1;
+    border-top: 0;
+  }
+  .activity-header {
+    text-align: center;
+    @include mq('m'){
+      text-align: left;
+      margin-left: 24px;
+      margin-bottom: 40px;
+    }
+  }
+  .desc {
+    margin: 0;
+
+  }
+  .time {
+    margin: 0;
+    line-height: 1.5;
+  }
+  .next-arrow {
+    position: absolute;
+    right: 0;
+    bottom:24px;
+    border: solid $main-color;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    @include mq('l'){
+      padding: 6px;
+    }
+  }
+}
+
+
+

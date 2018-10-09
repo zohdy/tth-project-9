@@ -1,0 +1,134 @@
+.graph-wrapper {
+  @extend %clearfix;
+  border-bottom: 1px solid $line-color;
+  .subtitle {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-left: 24px;
+    @include mq('m'){
+      text-align: left;
+    }
+  }
+}
+
+.chart-line-container {
+  position: relative;
+  padding-bottom: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  @include mq('m'){
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.bar-doughnut-wrapper {
+  position: relative;
+  border-top: 1px solid $line-color;
+}
+
+.chart-bar-container {
+  position: relative;
+  padding-bottom: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  max-width: 768px;
+  @include mq('m'){
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include mq('l'){
+    border-bottom: 0;
+  }
+}
+
+.chart-doughnut-container {
+  position: relative;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  max-width: 768px;
+  @include mq('m'){
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.bar-inner {
+  flex: 1;
+  border-bottom: 1px solid $line-color;
+  @include mq('l'){
+    float: left;
+    width: 50%;
+    border-right: 1px solid $line-color;
+    border-bottom: 0;
+  }
+}
+.doughnout-inner {
+  @include mq('l'){
+    float: right;
+    width: 50%;
+  }
+  .subtitle {
+    @include mq('l'){
+      margin-left: 24px;
+    }
+  }
+}
+
+#traffic-chart-line {
+  margin-top: 32px;
+}
+
+.bar-header, .mb-users-header {
+  margin-bottom: 24px;
+}
+
+.line-chart-header {
+  margin-top: 24px;
+  @include mq('m'){
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+    margin-top: 24px;
+    text-align: center;
+    padding:0;
+    margin-right: 24px;
+    @include mq('m'){
+      margin-top: 16px;
+      padding-left: 0;
+      text-align: center;
+    }
+    li {
+      margin-left: 8px;
+      margin-right: 8px;
+      line-height: 1.5;
+      display: inline-block;
+      font-size: .7em;
+      font-weight: 600;
+      color: $font-color;
+      cursor: pointer;
+      letter-spacing: .2px;
+      &.selected {
+        background: $color-accent;
+        color: $white;
+        padding: 4px 16px;
+        border-radius: 16px;
+      }
+    }
+    @include mq('l'){
+      font-size: 1.1em;
+    }
+  }
+}
+
+
+

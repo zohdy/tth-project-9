@@ -1,0 +1,44 @@
+.content-header {
+  display: flex;
+  flex-direction: row;
+  color: $font-color;
+
+  .content-title {
+    display: none;
+    padding-top: 24px;
+    margin-left: 24px;
+    border-right: 1px solid $line-color;
+    @include mq('m'){
+      display: inline-block;
+      padding-right: 24px;
+    }
+  }
+  .search-wrapper {
+    flex: 1;
+    width: 100%;
+    background: #fbfbfb;
+    border-bottom: 1px solid $line-color;
+    text-align: center;
+    @include mq('m'){
+      text-align: right;
+    }
+
+    .search-form {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      @include mq('m'){
+        margin-right: 24px;
+      }
+      input {
+        width: 85%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+
+
+

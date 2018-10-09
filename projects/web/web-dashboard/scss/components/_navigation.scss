@@ -1,0 +1,45 @@
+nav {
+  padding: 16px 0;
+  ul {
+    padding:0;
+    display: flex;
+    margin: 0;
+    @include mq('m'){
+      flex-direction: column;
+    }
+    li {
+      flex: 1;
+      text-align: center;
+      @include mq('m'){
+        margin-top: 32px;
+      }
+      &:first-child {
+        @include mq('m'){
+          margin-top: 16px;
+        }
+      }
+      &.selected {
+        @include mq('m'){
+          padding-top: 8px;
+          padding-bottom: 8px;
+          border-left: 4px solid $color-accent;
+        }
+      }
+      img {
+        width: 20%;
+        filter: brightness(0.6);
+        &.highlight {
+          filter: brightness(1);
+        }
+        &:hover {
+          filter: brightness(1);
+        }
+        @include mq('m'){
+         width: 40%;
+        }
+      }
+    }
+  }
+}
+
+

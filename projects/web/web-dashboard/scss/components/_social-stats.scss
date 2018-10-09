@@ -1,0 +1,64 @@
+.social-wrapper {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+
+.social-header {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: block;
+  text-align: center;
+  @include mq('m'){
+    text-align: left;
+  }
+}
+
+.img-box {
+  background: $main-color;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+  float: left;
+}
+
+.social-boxes {
+  @include mq('m'){
+    display: flex;
+  }
+}
+
+.social-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-inner {
+  display: flex;
+  @include mq('s'){
+    justify-content: center;
+  }
+}
+
+.social-outer {
+  padding: 16px;
+  border: 1px solid $line-color;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  max-width: 400px;
+  @extend %center-element;
+  @include mq('m'){
+    flex: 1;
+    &:first-child {
+      margin-right: 16px;
+    }
+    &:last-child {
+      margin-left: 16px;
+    }
+  }
+}
+
+.num-of-followers {
+  margin: 0;
+}

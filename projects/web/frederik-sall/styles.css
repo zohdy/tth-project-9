@@ -1,0 +1,194 @@
+body {
+    background: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-color: #f5f4e3;
+    background-size: cover;
+    padding: 0 15px;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto 60px;
+}
+
+header {
+    margin-top: 60px;
+    text-align: center;
+    color: #4d4642;
+}
+
+header h1 {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 20px;
+    font-size: 1.1em;
+    margin: 10px;
+}
+
+header h2 {
+    font-size: 0.6em;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 50px 0px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    padding: 20px;
+    font-size: .7em;
+    font-weight: bold 
+}
+
+nav a:hover, nav .selected {
+    border-bottom: 1px solid;
+}
+
+.image-wrapper img {
+    width: 100%;
+}
+
+
+.showreel-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 24%;
+    padding: 0 .5%;
+  }
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+.img-container {
+    position: relative;
+  }
+
+
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #35302E;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .2s ease;
+}
+
+
+
+.img-container:hover .img-overlay {
+    height: 94%;
+  }
+
+  .title {
+    color: #828282;
+    font-size: 0.7em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .about {
+      padding: 0 10%;
+      line-height: 1.7em;
+      margin: 0 auto;
+      max-width: 600px;
+      font-size: 0.65em;
+      text-align: center;
+      font-weight: 500;
+  }
+
+  .contact-wrapper{
+     max-width: 600px;
+     margin: 0 auto;
+     padding: 0 10%;
+  }
+
+  .contact-personal {
+     margin-bottom: 30px;
+     font-size: 8px;
+  }
+
+  .contact-personal h3 {
+    margin-bottom: 30px;
+    font-size: 10px;
+    font-weight: normal;
+ }
+
+  .contact-agents {
+    margin-bottom: 30px;
+    font-size: 8px;
+}
+
+  .contact-agents span, .copyright p {
+    line-height: 1.7em;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.contact-personal a, .contact-agents a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.copyright {
+    margin-bottom: 30px;
+    font-size: 8px;
+}
+
+
+
+
+
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 33.3%;
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-container:hover .img-overlay {
+        height: 96%;
+      }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 80%;
+    }
+
+    .img-container:hover .img-overlay {
+        height: 97%;
+      }
+
+    .about {
+        text-align: start
+    }
+}
+  
+
