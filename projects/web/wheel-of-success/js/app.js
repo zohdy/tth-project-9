@@ -6,11 +6,13 @@ const startBtn = document.querySelector('.btn__reset');
 const keyrowBtns = document.querySelectorAll('.keyrow button');
 const ul = phrase.children[0];
 const phrases = [
-    'Start somewhere',
+    'Sweet Dreams',
     'Work for it',
     'Now or never',
-    'Move forward',
-    'Be nice or go away'];
+    'Go somewhere',
+    'Be nice'
+];
+
 let missed = 0;
 
 
@@ -21,7 +23,7 @@ startBtn.addEventListener('click', (e) => {
         for(let i = 0; i < scoreboard.length; i++) {
             scoreboard[i].src = 'images/liveHeart.png';
         }
-        // Reset keyboard styles
+        // Reset keyboard css
         for(let i = 0; i < keyrowBtns.length; i++){
             keyrowBtns[i].className = '';
             keyrowBtns[i].disabled = false;

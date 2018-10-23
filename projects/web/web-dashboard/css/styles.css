@@ -260,7 +260,7 @@ img {
 /* Forms
    ========================================================================== */
 /**
- * 1. Change the font styles in all browsers.
+ * 1. Change the font css in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
 button,
@@ -320,7 +320,7 @@ button::-moz-focus-inner,
 }
 
 /**
- * Restore the focus styles unset by the previous rule.
+ * Restore the focus css unset by the previous rule.
  */
 button:-moz-focusring,
 [type=button]:-moz-focusring,
@@ -1460,4 +1460,4 @@ strong {
   padding-left: 8px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=css.css.map */

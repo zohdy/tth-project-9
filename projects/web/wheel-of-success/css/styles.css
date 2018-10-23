@@ -1,4 +1,4 @@
-/* Main styles */
+/* Main css */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
 
 /* Variables */
@@ -29,6 +29,7 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+  background: #fff;
 }
 
 li, ol, ul {
@@ -154,7 +155,6 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  border-radius: 5px;
 }
 
 
